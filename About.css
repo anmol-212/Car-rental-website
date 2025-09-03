@@ -1,0 +1,301 @@
+﻿/* CSS for the navigation bar */
+.navbar {
+    overflow: hidden;
+    text-align: center;
+}
+
+    .navbar a {
+        display: inline-block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+    .navbar img {
+        height: 40px;
+        width: auto;
+        padding: 5px;
+    }
+
+    .navbar .right {
+        float: right;
+    }
+
+        .navbar .right a:last-child {
+            background-color: red;
+            color: white;
+        }
+
+body {
+    background-image: url("https://media.discordapp.net/attachments/977603881116790900/1131510524564217896/7CB16233-3EBA-4077-A6E6-BB6243C85AC8.jpg");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-image {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+/* Add custom scrollbar styles */
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 3px;
+}
+
+/* Additional styles for the last image text */
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.black-text {
+    color: black;
+}
+
+.page-heading {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    color: black;
+}
+
+.about-image {
+    flex: 1;
+    margin-bottom: -170px; /* Add margin to move the image down */
+    display: flex; /* Add this to override the align-items: center; property */
+    justify-content: center; /* Add this to center the image horizontally */
+}
+
+    .about-image img {
+        display: block;
+        margin-right: 40px;
+        max-width: 100%;
+    }
+
+.about-content {
+    flex: 1;
+    text-align: left;
+    margin-top: 150px; /* Add margin to move the text down */
+}
+
+.about-stats {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 400px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.w3-row-padding {
+    display: flex;
+    justify-content: center;
+}
+
+.w3-third {
+    flex: 1;
+    margin: 10px;
+}
+
+.w3-card {
+    min-height: 460px;
+}
+
+   .last-image img {
+        width: 100%;
+        height: 178px;
+    }
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Style for the left section of the footer */
+.footer-left {
+    flex: 1;
+}
+
+/* Style for the right section of the footer */
+.footer-right {
+    flex: 1;
+    text-align: right;
+    margin-right: 100px; /* Add margin to the right side */
+    margin-left: 100px; /* Increase left margin */
+}
+
+/* Style for the input box and button */
+.subscribe-input {
+    margin-top: 10px;
+}
+
+    .subscribe-input input[type="text"] {
+        padding: 10px;
+        width: 200px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .subscribe-input input[type="submit"] {
+        padding: 10px 30px; /* Increase padding */
+        margin-top: 5px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+/* Additional styles for the last image text */
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.black-text {
+    color: black;
+}
+/* Style for the footer */
+/* Style for the footer */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+    .footer h2 {
+        margin-bottom: 10px;
+    }
+
+    .footer p {
+        margin: 5px 0;
+    }
+
+/* Style for the left section of the footer */
+.footer-left {
+    flex: 1;
+}
+
+/* Style for the middle section of the footer */
+.footer-middle {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+}
+
+/* Style for the right section of the footer */
+.footer-right {
+    flex: 1;
+    text-align: left; /* Align the text to the left */
+    margin-right: 1PX; /* Move the section to the left */
+}
+
+/* Style for the input box and button */
+.subscribe-input {
+    margin-top: 10px;
+}
+
+    .subscribe-input input[type="text"] {
+        padding: 10px;
+        width: 100%;
+        max-width: 250px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .subscribe-input input[type="submit"] {
+        padding: 10px 30px;
+        margin-top: 5px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+/* Media queries for responsive layout */
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left, .footer-middle, .footer-right {
+        flex: 1;
+        text-align: center;
+    }
+
+    .footer-middle {
+        margin-bottom: 0; /* Remove margin at the bottom */
+    }
+
+    .footer-right {
+        margin-right: 0; /* Remove the right margin */
+        text-align: center; /* Align the text to the center */
+    }
+}
+
+.black-car {
+    position: relative;
+    text-align: center;
+}
+
+.image-text {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 40px; /* Increased text size */
+    font-weight: bold;
+}

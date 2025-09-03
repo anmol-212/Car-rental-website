@@ -1,0 +1,292 @@
+﻿/* CSS for the navigation bar */
+.navbar {
+    overflow: hidden;
+    text-align: center;
+}
+
+    .navbar a {
+        float: none;
+        display: inline-block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+    .navbar img {
+        height: 40px;
+        width: auto;
+        padding: 5px;
+    }
+
+    .navbar .right {
+        float: right;
+    }
+
+        .navbar .right a:last-child {
+            background-color: red;
+            color: white;
+        }
+
+/* CSS for the main content */
+body {
+    background-image: url("https://media.discordapp.net/attachments/977603881116790900/1131510524564217896/7CB16233-3EBA-4077-A6E6-BB6243C85AC8.jpg");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.item {
+    flex: 1;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+    .item img {
+        display: block;
+        margin-right: 0;
+        width: 270px;
+        height: 200px;
+        border-radius: 8px 8px 0 0;
+    }
+
+.right-text {
+    text-align: right;
+}
+
+.price {
+    font-size: 24px;
+}
+
+.vehicle-info {
+    font-size: 18px;
+}
+
+.book-ride-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #19bea0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+}
+
+.center-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Style for the left section of the footer */
+.footer-left {
+    flex: 1;
+}
+
+/* Style for the right section of the footer */
+.footer-right {
+    flex: 1;
+    text-align: right;
+    margin-right: 100px; /* Add margin to the right side */
+    margin-left: 100px; /* Increase left margin */
+}
+
+/* Style for the input box and button */
+.subscribe-input {
+    margin-top: 10px;
+}
+
+    .subscribe-input input[type="text"] {
+        padding: 10px;
+        width: 200px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .subscribe-input input[type="submit"] {
+        padding: 10px 30px; /* Increase padding */
+        margin-top: 5px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+/* Additional styles for the last image text */
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.black-text {
+    color: black;
+}
+/* Style for the footer */
+/* Style for the footer */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+    .footer h2 {
+        margin-bottom: 10px;
+    }
+
+    .footer p {
+        margin: 5px 0;
+    }
+
+/* Style for the left section of the footer */
+.footer-left {
+    flex: 1;
+}
+
+/* Style for the middle section of the footer */
+.footer-middle {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+}
+
+/* Style for the right section of the footer */
+.footer-right {
+    flex: 1;
+    text-align: left; /* Align the text to the left */
+    margin-right: auto; /* Move the section to the left */
+}
+
+/* Style for the input box and button */
+.subscribe-input {
+    margin-top: 10px;
+}
+
+    .subscribe-input input[type="text"] {
+        padding: 10px;
+        width: 100%;
+        max-width: 250px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .subscribe-input input[type="submit"] {
+        padding: 10px 30px;
+        margin-top: 5px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+/* Media queries for responsive layout */
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left, .footer-middle, .footer-right {
+        flex: 1;
+        text-align: center;
+    }
+
+    .footer-middle {
+        margin-bottom: 0; /* Remove margin at the bottom */
+    }
+
+    .footer-right {
+        margin-right: 0; /* Remove the right margin */
+        text-align: center; /* Align the text to the center */
+    }
+}
+
+    
+/* Add custom scrollbar styles */
+/* Hide the default scrollbar */
+body::-webkit-scrollbar {
+    width: 6px; /* Set the width of the scrollbar */
+}
+
+/* Style the scrollbar thumb (the moving part) */
+body::-webkit-scrollbar-thumb {
+    background-color: black; /* Set the color of the scrollbar thumb */
+    border-radius: 3px; /* Round the corners of the scrollbar thumb */
+}
+
+/* Make the scrollbar appear above the content */
+body {
+    scrollbar-width: thin; /* For Firefox support (non-webkit browsers) */
+    scrollbar-color: red transparent; /* For Firefox support (non-webkit browsers) */
+}
+
+/* Additional styles for Firefox scrollbar (optional) */
+/* Use these styles if you want to apply similar customization in Firefox */
+/* Replace 'body' with your container or element's class/ID selector */
+body {
+    scrollbar-width: thin; /* Set the width of the scrollbar */
+    scrollbar-color: red transparent; /* Set the color of the scrollbar thumb and track */
+}
+
+    body::-webkit-scrollbar-track {
+        background-color: transparent; /* Set the color of the scrollbar track */
+    }
+
+body {
+    /* Add background image to the entire page */
+}
+    body::-webkit-scrollbar {
+        width: 6px; /* Set the width of the scrollbar */
+    }
